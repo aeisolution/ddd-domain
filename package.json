@@ -1,0 +1,31 @@
+{
+  "name": "aeis-ddd-domain",
+  "version": "0.1.0",
+  "description": "Domain-Driven Design library for Domain Layer",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aeisolution/ddd-domain.git"
+  },
+  "keywords": [
+    "ddd",
+    "domain",
+    "design"
+  ],
+  "author": "aeisolution <developer@aeisolution.it>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aeisolution/ddd-domain/issues"
+  },
+  "homepage": "https://github.com/aeisolution/ddd-domain",
+  "devDependencies": {
+    "chai": "^2.3.0",
+    "mocha": "^2.2.5"
+  }
+}
