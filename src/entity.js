@@ -1,5 +1,7 @@
 var Schema = require('./schema');
 var fn_checkId = require('./functions/entity').checkId;
+var fn_set = require('./functions/entity').set;
+
 
 function Entity(name, id, fields) {
 	var self = this; 
@@ -13,9 +15,27 @@ function Entity(name, id, fields) {
 	
 	// Properties
 	this.data = {};
-	
 }
 
 // Methods ----------------------------
+Entity.prototype.getType = function() {
+	return this.schema.name;
+};
+
+Entity.prototype.getId = function() {
+	return this.data[this.id] || undefined;
+};
+
+Entity.prototype.fieldExist = function(name) {
+	return this.schema.fieldExist(name);
+};
+
+Entity.prototype.set = function(data) {
+	fn_set(this, data);
+};
+
+Entity.prototype.get = function() {
+	return this.data;
+};
 
 module.exports = Entity;

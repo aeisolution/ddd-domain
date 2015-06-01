@@ -2,7 +2,7 @@
   "name": "aeis-ddd-domain",
   "version": "0.1.0",
   "description": "Domain-Driven Design library for Domain Layer",
-  "main": "index.js",
+  "main": "./index",
   "directories": {
     "test": "test"
   },
